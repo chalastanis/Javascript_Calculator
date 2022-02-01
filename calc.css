@@ -1,0 +1,175 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%; /* κανοντασ αυτες τις ρυθμισεις καθαριζει τα κενα που υπαρχουν γυρω */
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+body{   
+    background-color: black;
+
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    background-color: lightgray;
+    width: 350px;
+    height: 560px;
+
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+.calc{
+    background-color: white;
+    width: 310px;
+    height: 520px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 10px 20px rgba(0,0,0,0.23);
+    
+      
+}
+
+.monitor{
+    background-color: rgb(101, 253, 178);
+    height: 140px;
+    margin: 0%;
+    padding-top: 40px;
+    padding-right: 20px;
+    border-radius: 15px 15px 0 0;
+    position: relative;
+    z-index: 1;
+
+    font-size: 60px;
+    text-align: right;
+}
+#monitor_sm{
+    height: 40px;
+    width: 310px;
+    margin: 0%;
+    padding-top: 5px;
+    padding-left: 5px;
+    border-radius: 15px 15px 0 0;
+    position: absolute;
+    
+    z-index: 2;
+
+    font-size: 20px;
+}
+
+.buttons{
+    width: 300px;
+    height: 320px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+
+}
+
+button{
+    background-color: lightgrey;
+    width: 70px;
+    height: 70px;
+    margin: 2.5px;
+    padding-bottom: 3px;
+    border-radius: 50%;
+    border: none;
+    outline:none;
+
+    font-size: 30px;
+    text-align: center;
+}
+
+button:hover{
+    background-color: gray;
+    color: lightgray;
+    border: none;
+    outline:none;
+}
+
+button:active{
+    font-size: 20px;
+    transform: translateY(3px);
+}
+
+.buttonOn{
+    background-color: gray;    
+    color: lightgray;
+    width: 70px;
+    height: 70px;
+    margin: 2.5px;
+    padding: 18px;
+    border-radius: 50%;
+    border: none;
+    outline:none;
+    font-size: 20px;
+    transform: translateY(3px);
+}
+
+
+.title{
+    
+    height: 70px;
+    padding-top: 25px;
+    padding-left: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.redBtn{
+    background-color: red;
+    color: white;
+}
+
+.redBtn:hover{
+    background-color: darkred;
+}
+
+.greenBtn{
+    background-color: limegreen;
+    color: white;
+}
+
+.greenBtn:hover{
+    background-color:darkgreen;
+}
+
+/*------------------------portfolio back button--------------------------*/
+
+#portfolio{
+    width: 10vh;
+    height: 10vh;
+    position: fixed;
+    top: 10vh;
+    right:10vh;
+    float: left;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    opacity: 0.8;
+    color: white;
+    font-size: 1.5vh;
+    background-image:radial-gradient(circle at 5vh 5vh, rgb(99, 243, 147), rgb(56, 43, 32));
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#portfolio:hover{
+    width: 9.5vh;
+    height: 9.5vh;
+    opacity: 1;
+    color: white;
+    background-image:radial-gradient(circle at 5vh 5vh, rgb(97, 167, 120), rgb(56, 43, 32));
+}
+
+#portfolio div{
+    display: flex;
+    align-items: center;
+}
